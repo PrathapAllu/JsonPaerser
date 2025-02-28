@@ -8,11 +8,12 @@ namespace JsonPaerser
 
         public double Temperature { get; set; }
 
-
+        [JsonPropertyName("feels_like")]
         public double FeelsLike { get; set; }
 
         public int Humidity { get; set; }
 
+        [JsonPropertyName("wind_speed")]
         public double WindSpeed { get; set; }
 
         public string Condition { get; set; } = string.Empty;
